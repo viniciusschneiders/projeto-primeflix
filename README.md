@@ -44,6 +44,17 @@ Após realizar as importações, realizamos a criação da nossa function `Route
 Depois de configurar nossos path e elements, renderizamos dentro do `app.js`, nosso componente `<RoutesApp/>`
 
 
+## 3° Etapa - Criação do Header
+
+Criação da pasta `components`, onde ficará nossos componentes reutilizáveis, incluíndo nosso Header.
+
+Fazemos a criação do nosso componente de Header `/Header/index.js`
+
+Após essa criação, precisamos renderizar em todas as nossas rotas, para isto ocorrer, vamos importar nosso componente dentro do `routes.js` + adicionar dentro o nosso componente dentro `BrowserRouter` antes das rotas.
+
+Após a criação e inclusão nas rotas, fazemos a criação das tags do nosso `/Header/index.js` onde linkamos e encaminhamos para as rotas, como por exemplo ` <Link className='logo' to ='/'>Prime Flix</Link>`
+
+Com isto, começamos a estilização do nosso Header, configurando com Display Flex + estilizações necessárias.
 
 
 
