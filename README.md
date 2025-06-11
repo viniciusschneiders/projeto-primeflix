@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Projeto PrimeFlix - ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto com intuito de trabalhar alguns conceitos de React e evoluir com JavaScript.
 
-## Available Scripts
+Ministrado pelas aulas do SujeitoProgramador, Curso FullStack - JS.
 
-In the project directory, you can run:
+### Todo o conteúdo escrito do Readme, não foi copiado de nenhum local, é apenas meu entendimento e anotações consideradas importantes para compreensão do desenvolvimento da aplicação.
 
-### `npm start`
+## 1° Etapa - Instalação e Higienização
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Começo fazendo a criação com o `npx create-react-app projeto-primeflix`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Faço a limpeza dos arquivos que não são necessários/utilizáveis no projeto. (app.css / app.test.js / logo.svg / setupTests.js)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 2° Etapa - Criação de Rotas
 
-### `npm run build`
+Nesta etapa, faço a criação das pastas e componentes que serão utilizados nas rotas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para este projeto, é criado os componentes `Home` e `Filme`. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Home = Página Principal | Filme = Página com Detalhes do Filme
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Após criarmos as pastas, podemos pausar nossa aplicação e instalar o pacote responsável por gerenciar a navegação entre as nossas páginas, sem necessidade de recarregamento -> `npm install react-router-dom`
 
-### `npm run eject`
+Após instalação dos pacotes, rodamos novamente a aplicação -> `npm start` + Criação do arquivo de rotas -> `routes.js`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Dentro de `routes.js`, vamos importar nossa biblioteca recém instalada utilizando os seguintes imports:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`import {BrowserRouter, Routes, Route} from 'react-router-dom’`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Onde cada importação tem sua devida função:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`BrowserRouter` = Define o sistema de rotas.
+`Routes` e `Route` = Mapeiam URL's para componentes, como por exemplo /filme -> componente Filme
 
-## Learn More
+Adicionamos também, a importação dos componentes que serão utilizados nas rotas:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`import Home from './pages/Home`
+`import Home from './pages/Filme`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Após realizar as importações, realizamos a criação da nossa function `RoutesApp()`, responsável por mapear e configurar nossas Rotas e Componentes.
 
-### Code Splitting
+Depois de configurar nossos path e elements, renderizamos dentro do `app.js`, nosso componente `<RoutesApp/>`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
