@@ -58,5 +58,11 @@ Com isto, começamos a estilização do nosso Header, configurando com Display F
 
 
 
+## 4° Etapa - Criação + Consumir API
 
+Nesta etapa, criamos nossa conta no local onde vamos consumir a API, no site https://www.themoviedb.org/, onde criamos nossa API KEY
+
+Para consumir a API, vamos utilizar o pacote `axios`.
+
+Pausamos a aplicação e instalamos o pacote com `npm install axios`
 
