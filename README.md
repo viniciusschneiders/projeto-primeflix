@@ -66,3 +66,4 @@ Para consumir a API, vamos utilizar o pacote `axios`.
 
 Pausamos a aplicação e instalamos o pacote com `npm install axios`
 
+Realizamos a criação e mapeamento da API, com a criação da pasta `services/api.js`. Dentro de `/api.js`, utilizamos a biblioteca `axios` para criar a base da URL da nossa API, criando a constante chamada `api`
