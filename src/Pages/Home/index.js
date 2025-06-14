@@ -20,8 +20,8 @@ function Home(){
 
                 })
              
-                    console.log(response.data.results);
-
+                    //console.log(response.data.results.slice(0,10));
+                    setFilmes(response.data.results.slice(0,10))
             }
 
                 loadFilmes();
@@ -29,7 +29,28 @@ function Home(){
     }, [] )
 
 
+    return (
 
+        <div className='container'>
+            <div className='lista-filmes'>
+
+              {filmes.map((filme)=>{
+
+            return (
+
+                <article key={filme.id}>
+                <strong>{filme.title}</strong>
+
+                </article>
+            )
+
+        })}
+
+        </div>
+
+        </div>
+
+    )
 
 }
 
