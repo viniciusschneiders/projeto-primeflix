@@ -67,3 +67,12 @@ Para consumir a API, vamos utilizar o pacote `axios`.
 Pausamos a aplicação e instalamos o pacote com `npm install axios`
 
 Realizamos a criação e mapeamento da API, com a criação da pasta `services/api.js`. Dentro de `/api.js`, utilizamos a biblioteca `axios` para criar a base da URL da nossa API, criando a constante chamada `api`
+
+
+## 5° Etapa - Criação da Página Home
+
+
+## 6° Etapa - Criação da Página Filmes
+
+
+# 7° Etapa - Criação de "Página não encontrada!" + Configuração de Loading da Página
