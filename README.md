@@ -75,4 +75,9 @@ Realizamos a criação e mapeamento da API, com a criação da pasta `services/a
 ## 6° Etapa - Criação da Página Filmes
 
 
-# 7° Etapa - Criação de "Página não encontrada!" + Configuração de Loading da Página
+## 7° Etapa - Criação de "Página não encontrada!" + Configuração de Loading da Página
+
+
+## 8° Etapa - Edição da Página Detalhes do Filme
+
+Nesta etapa, vamos realizar a estilização da página Detalhes do Filme, utilizando CSS para centralizar e personalizar as informações contida da página.
